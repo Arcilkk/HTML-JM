@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <h2>Datos personales basicos</h2>
+
+        <label for="nombreUsuario">Nombre de usuario</label>
+        <input type="text" id="nombreUsuario" name="nombre" placeholder="Ej: Juan Perez">
+
+        <br><br>
+
+        <label for="correoUsuario">Correo electrónico</label>
+        <input type="email" id="correoUsuario" name="email" placeholder="Ej: juan.perez@example.com" required>
+    </form>
+
+    <form action="">
+        <h2>Diferentes tipos de Inputs</h2>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="clave" id="pass">
+        <br><br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="18" max="99">
+        <br><br>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento">
+        <br><br>
+        <p>Selecciona tu plan</p>
+        <input type="radio" name="plan" id="plan1" value="gratis">
+        <label for="plan1">Básico</label>
+        <input type="radio" name="plan" id="plan2" value="premium">
+        <label for="plan2">Premium</label>
+        <input type="radio" name="plan" id="plan3" value="vip">
+        <label for="plan3">VIP</label>
+        <br><br>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <br><br>
+        
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpiar Formulario</button>
+    </form>
+
+    <form action="">
+        <h2>Textarea y Selects</h2>
+        <label for="País">¿De que país nos visitas?</label>
+        <select name="País" id="País">
+            <option value="">--SELECCIONE UNA OPCIÓN--</option>
+            <option value="CO">Colombia</option>
+            <option value="MX">México</option>
+            <option value="PE">Perú</option>
+            <option value="AR">Argentina</option>
+        </select>
+        <br><br>
+        <label for="comentarios"></label>
+        <p>Comentarios</p>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribe tus comentarios aquí..."></textarea>
+    </form>
+</body>
+</html>
