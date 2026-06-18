@@ -1,0 +1,41 @@
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgb(153, 139, 139);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: girarEntrada 2s infinite;
+}
+
+@keyframes girarEntrada {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px) rotate(-720deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: #584f4f;
+    padding: 40px;
+}
+
+.datos {
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,15 @@
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+.boton:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}

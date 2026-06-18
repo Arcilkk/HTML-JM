@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLEO</title>
+    <link rel="stylesheet" href="aab.css">
+</head>
+<body>
+    <form action=""></form>
+    <h2>Formulario de Empleo</h2>
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ej: Pepe" required>
+    <br><br>
+    <label for="apellido">Apellido Completo</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ej: Gómez" required>
+    <br><br>
+    <label for="correo">Correo Electrónico</label>
+    <input type="email" id="correo" name="correo" placeholder="Ej: pepegomez@gmail.com" required>
+    <br><br>
+    <label for="fecha">Fecha de Disponibilidad</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <br><br>
+    <h5>NIVEL DE ESTUDIOS</h5>
+    <select name="estudios" id="estudios" required>
+        <option value="">Seleccione una opción</option>
+        <option value="primaria">Primaria</option>
+        <option value="secundaria">Secundaria</option>
+        <option value="tecnico">Técnico</option>
+        <option value="universitario">Universitario</option>
+    </select>
+    <br><br>
+    <label for="Experiencia">¿Cuantos años de experiencia tienes?</label>
+    <input type="number" id="Experiencia" name="Experiencia" min="0" max="50">
+    <br><br>
+    <p>Lenguajes de Programación (minimo 3)</p>
+    <input type="checkbox" id="lenguaje1" name="lenguajes" value="python">
+    <label for="lenguaje1">Python</label>
+    <input type="checkbox" id="lenguaje2" name="lenguajes" value="java">
+    <label for="lenguaje2">Java</label>
+    <input type="checkbox" id="lenguaje3" name="lenguajes" value="javascript">
+    <label for="lenguaje3">JavaScript</label>
+    <input type="checkbox" id="lenguaje4" name="lenguajes" value="csharp">
+    <label for="lenguaje4">C#</label>
+    <input type="checkbox" id="lenguaje5" name="lenguajes" value="php">
+    <label for="lenguaje5">PHP</label>
+    <br><br>
+    <p>Carta de Presentación</p>
+    <textarea name="Carta" id="Carta" cols="60" rows="5" placeholder="Escribe tu carta de presentación aquí..."></textarea>
+    <br><br>
+    <button type="submit">Enviar Solicitud</button>
+    <button type="reset">Limpiar Formulario</button>
+</body>
+</html>
